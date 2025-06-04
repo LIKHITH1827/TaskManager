@@ -4,6 +4,8 @@ import java.time.LocalDate;
 
 import org.springframework.data.web.ProjectedPayload;
 
+import com.fasterxml.jackson.annotation.JsonBackReference;
+
 import jakarta.persistence.Entity;
 import jakarta.persistence.FetchType;
 import jakarta.persistence.GeneratedValue;
@@ -64,6 +66,7 @@ public class Task {
 	
 	@ManyToOne(fetch=FetchType.LAZY)
 	@JoinColumn(name = "project_id")
+	@JsonBackReference
 	private Project project;
 	
 }
