@@ -21,7 +21,6 @@ import lombok.Setter;
 @Entity
 @Getter
 @Setter
-@NoArgsConstructor
 public class Task {
 
 	@Id
@@ -68,5 +67,12 @@ public class Task {
 	@JoinColumn(name = "project_id")
 	@JsonBackReference
 	private Project project;
+
+	public Project getProject() {
+		return project;
+	}
+	public void setProject(Project project) {
+		this.project = project;
+	}
 	
 }

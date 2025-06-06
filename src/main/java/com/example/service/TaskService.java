@@ -20,7 +20,7 @@ private final TaskRepository taskRepository;
 		this.taskRepository=taskRepository;
 	}
 	
-	public List<Task> getAllTask(){
+	public List<Task> getAllTasks(){
 		return taskRepository.findAll();
 	}
 	
@@ -28,8 +28,8 @@ private final TaskRepository taskRepository;
 		return taskRepository.findById(id);
 	}
 	
-	public void saveTask(Task task) {
-		taskRepository.save(task);
+	public Task saveTask(Task task) {
+		return taskRepository.save(task);
 	
 	}
 	

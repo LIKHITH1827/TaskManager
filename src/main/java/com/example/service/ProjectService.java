@@ -15,11 +15,12 @@ public class ProjectService {
 	
 	private final ProjectRepository projectRepository;
 	
+	
 	public ProjectService(ProjectRepository projectRepository) {
 		this.projectRepository=projectRepository;
 	}
 	
-	public List<Project> getAllProjects(){
+	public  List<Project>  getAllProjects(){
 		return projectRepository.findAll();
 	}
 	
@@ -27,13 +28,13 @@ public class ProjectService {
 		return projectRepository.findById(id);
 	}
 	
-	public void saveProject(Project project) {
-	   projectRepository.save(project);
+	public Project saveProject(Project project) {
+	   return projectRepository.save(project);
 	
 	}
 	
 	
-	public void deleteProjectById(Long id) {
+	public void deleteProject(Long id) {
 		projectRepository.deleteById(id);
 	}
 	

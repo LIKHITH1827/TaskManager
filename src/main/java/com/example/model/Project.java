@@ -28,13 +28,37 @@ public class Project {
    @OneToMany(mappedBy="project",cascade = CascadeType.ALL,orphanRemoval = true)
    private List<Task> tasks;
    
-  private void AddTask(Task task) {
+  public void addTask(Task task) {
 	  tasks.add(task);
-	 // task.setProject(this);
+	  task.setProject(this);
   }
-  private void RemoveTask(Task task) {
+  public void removeTask(Task task) {
 	  tasks.remove(task);
-	  //tasks.setProject(null);
+	  task.setProject(null);
   }
+public Long getId() {
+	return id;
+}
+public void setId(Long id) {
+	this.id = id;
+}
+public String getName() {
+	return name;
+}
+public void setName(String name) {
+	this.name = name;
+}
+public String getDescription() {
+	return description;
+}
+public void setDescription(String description) {
+	this.description = description;
+}
+public List<Task> getTasks() {
+	return tasks;
+}
+public void setTasks(List<Task> tasks) {
+	this.tasks = tasks;
+}
 
 }
