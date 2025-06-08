@@ -1,8 +1,9 @@
-package com.example.controller;
+package com.example.api.controller;
 
 import java.util.List;
 import java.util.Optional;
-
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.DeleteMapping;
@@ -14,28 +15,27 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.example.model.Task;
-import com.example.service.TaskService;
+import com.example.api.model.Task;
+import com.example.api.service.TaskService;
 
-@CrossOrigin(origins = "http://localhost:4200", allowedHeaders = "*")
+//@CrossOrigin(origins = "http://localhost:4200", allowedHeaders = "*")
+
 @RestController
-@RequestMapping("/api/tasks")
 public class TaskController {
-
-	
+    
 	private final TaskService taskService;
 
     public TaskController(TaskService taskService) {
         this.taskService = taskService;
     }
 
-    @GetMapping
+    @GetMapping("/api/tasks")
     public List<Task> getAllTasks() {
         return taskService.getAllTasks();
     }
 
-    @GetMapping("/{id}")
-    public ResponseEntity<Task> getTaskById(@PathVariable Long id) {
+    @GetMapping("/api/tasks/{id}")
+    public ResponseEntity<Task> getTaskById(@PathVariable("id") Long id) {
         Optional<Task> task = taskService.getTaskById(id);
         if (task.isPresent()) {
             return ResponseEntity.ok(task.get());
@@ -44,19 +44,19 @@ public class TaskController {
         }
     }
 
-    @PostMapping
+    @PostMapping("/api/tasks")
     public ResponseEntity<Task> createTask(@RequestBody Task task) {
         return ResponseEntity.ok(taskService.saveTask(task));
     }
 
-    @PutMapping("/{id}")
-    public ResponseEntity<Task> updateTask(@PathVariable Long id, @RequestBody Task task) {
+    @PutMapping("/api/tasks/{id}")
+    public ResponseEntity<Task> updateTask(@PathVariable("id") Long id, @RequestBody Task task) {
         Optional<Task> taskOptional = taskService.getTaskById(id);
         if (taskOptional.isPresent()) {
             Task updatedTask = taskOptional.get();
             updatedTask.setDescription(task.getDescription());
             updatedTask.setDueDate(task.getDueDate());
-            updatedTask.setCompleted(task.isCompleted());
+            updatedTask.setCompleted(task.getCompleted());
             updatedTask.setName(task.getName());
             return ResponseEntity.ok(taskService.saveTask(updatedTask));
         } else {
@@ -64,7 +64,7 @@ public class TaskController {
         }
     }
 
-    @DeleteMapping("/{id}")
+    @DeleteMapping("/api/tasks/{id}")
     public ResponseEntity<Task> deleteTask(@PathVariable Long id) {
         taskService.deleteTaskById(id);
         return ResponseEntity.noContent().build();

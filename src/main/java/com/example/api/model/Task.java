@@ -1,4 +1,4 @@
-package com.example.model;
+package com.example.api.model;
 
 import java.time.LocalDate;
 
@@ -6,6 +6,7 @@ import org.springframework.data.web.ProjectedPayload;
 
 import com.fasterxml.jackson.annotation.JsonBackReference;
 
+import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.FetchType;
 import jakarta.persistence.GeneratedValue;
@@ -29,8 +30,14 @@ public class Task {
 	
 	private String name;
 	private String description;
-	private boolean completed;
+	@Column(nullable = false)
+	private Boolean completed=false;
 	private LocalDate dueDate;
+	
+	@ManyToOne(fetch=FetchType.LAZY)
+	@JoinColumn(name = "project_id")
+	@JsonBackReference
+	private Project project;
 	
 	public Long getId() {
 		return id;
@@ -50,10 +57,10 @@ public class Task {
 	public void setDescription(String description) {
 		this.description = description;
 	}
-	public boolean isCompleted() {
+	public Boolean getCompleted() {
 		return completed;
 	}
-	public void setCompleted(boolean completed) {
+	public void setCompleted(Boolean completed) {
 		this.completed = completed;
 	}
 	public LocalDate getDueDate() {
@@ -63,10 +70,7 @@ public class Task {
 		this.dueDate = dueDate;
 	}
 	
-	@ManyToOne(fetch=FetchType.LAZY)
-	@JoinColumn(name = "project_id")
-	@JsonBackReference
-	private Project project;
+	
 
 	public Project getProject() {
 		return project;

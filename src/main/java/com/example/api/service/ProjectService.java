@@ -1,4 +1,4 @@
-package com.example.service;
+package com.example.api.service;
 
 import java.util.List;
 import java.util.Optional;
@@ -6,8 +6,8 @@ import java.util.Optional;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import com.example.model.Project;
-import com.example.repository.ProjectRepository;
+import com.example.api.model.Project;
+import com.example.api.repository.ProjectRepository;
 
 @Service
 public class ProjectService {

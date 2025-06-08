@@ -1,14 +1,15 @@
-package com.example.service;
+package com.example.api.service;
 
 import java.util.List;
 import java.util.Optional;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import com.example.model.Project;
-import com.example.model.Task;
-import com.example.repository.ProjectRepository;
-import com.example.repository.TaskRepository;
+import com.example.api.model.Project;
+import com.example.api.model.Task;
+import com.example.api.repository.ProjectRepository;
+import com.example.api.repository.TaskRepository;
 
 @Service
 public class TaskService {
@@ -16,6 +17,7 @@ public class TaskService {
 	
 private final TaskRepository taskRepository;
 	
+   
 	public TaskService(TaskRepository taskRepository) {
 		this.taskRepository=taskRepository;
 	}
