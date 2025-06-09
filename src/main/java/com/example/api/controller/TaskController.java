@@ -23,6 +23,7 @@ import com.example.api.service.TaskService;
 @RestController
 public class TaskController {
     
+	private static final Logger logger= LoggerFactory.getLogger(ProjectController.class);
 	private final TaskService taskService;
 
     public TaskController(TaskService taskService) {
@@ -31,6 +32,7 @@ public class TaskController {
 
     @GetMapping("/api/tasks")
     public List<Task> getAllTasks() {
+    	logger.info("GET api/tasks");
         return taskService.getAllTasks();
     }
 
