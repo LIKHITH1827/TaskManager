@@ -1,49 +1,52 @@
 
-<div>
-   <div>
+<div class="task-list-container">
+   <div class="heading">
      <h3>Tasks List</h3>
 
       <div>
-        <span>
-          In progress
-        </span>
-        <span>
-          Completed
-        </span>
+        <span class="status-dot in-progress"></span>In progress
+        <span class="status-dot completed"> </span>Completed
       </div>
   </div>
    <table>
     <thead>
+      <tr>
         <th>Task</th>
         <th>Status</th>
         <th>Due Date</th>
+      </tr>
+
     </thead>
     <tbody>
       <tr>
           <td>
             <label>
-              <input type="checkbox" aria-label="Select Task" Design WF checked>
+              <input type="checkbox" aria-label="Select Task"> Design WF checked
             </label>  </td>
-          <td>In Progress</td>
+          <td><span class="status-dot in-progress"></span>In Progress</td>
           <td>06-15-2025</td>
       </tr>
       <tr>
           <td>
             <label>
-              <input type="checkbox" aria-label="Select Task" Develop Frontend>
+              <input type="checkbox" aria-label="Select Task">Develop Frontend
             </label>  </td>
-          <td>Completed</td>
+          <td><span class="status-dot completed"></span>Completed</td>
           <td>06-02-2025</td>
       </tr>
       <tr>
           <td>
             <label>
-              <input type="checkbox" aria-label="Select Task" Do Documentation>
+              <input type="checkbox" aria-label="Select Task">Do Documentation
             </label>  </td>
-          <td>In Progress</td>
+          <td><span class="status-dot in-progress"></span>In Progress</td>
           <td>06-13-2025</td>
       </tr>
     </tbody>
    </table>
+   <div class="button-container">
+    <button>Add New Task</button>
+
+	</div>
 </div>
 
