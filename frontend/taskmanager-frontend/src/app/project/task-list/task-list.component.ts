@@ -1,10 +1,11 @@
 import { Component } from '@angular/core';
 import { Task } from '../../task.model';
+import { DatePipe } from '@angular/common';
 
 @Component({
   selector: 'app-task-list',
   standalone: true,
-  imports: [],
+  imports: [DatePipe],
   templateUrl: './task-list.component.html',
   styleUrl: './task-list.component.css'
 })
@@ -21,26 +22,26 @@ project : 1
 },
 {
 
-  id: 1,
+  id: 2,
 name: "Design Wireframe",
 description : "this is the description",
 completed : false,
 dueDate: new Date('06-25-2025'),
-project : 1
+project : 3
 
 },
 {
 
-  id: 1,
+  id: 3,
 name: "Design Wireframe",
 description : "this is the description",
 completed : false,
 dueDate: new Date('06-25-2025'),
-project : 1
+project : 2
 
 },{
 
-  id: 1,
+  id: 4,
 name: "Design Wireframe",
 description : "this is the description",
 completed : false,
@@ -51,7 +52,11 @@ project : 1
 
 ]
 
-
+handleCheckBox(id:number){
+  //console.log(id);
+ const checkedIndex = this.tasks.findIndex((task)=>task.id===id);
+ this.tasks[checkedIndex].completed=!this.tasks[checkedIndex].completed;
+}
 
 
 
