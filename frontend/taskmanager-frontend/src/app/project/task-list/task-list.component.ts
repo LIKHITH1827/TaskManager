@@ -4,6 +4,16 @@ import { DatePipe } from '@angular/common';
 import { TaskService } from '../../task.service';
 import { TaskFormComponent } from '../task-form/task-form.component';
 
+const emptyTask={
+  name:"",
+  description:"",
+  dueDate: new Date(),
+ completed: false,
+ project:0,
+ id:0,
+};
+
+
 @Component({
   selector: 'app-task-list',
   standalone: true,
@@ -14,8 +24,9 @@ import { TaskFormComponent } from '../task-form/task-form.component';
 export class TaskListComponent {
 
   tasks:Task[];
-
+   formType: "UPDATE" | "CREATE" = 'CREATE';
   showModal:boolean=false;
+  selectedTask : Task = emptyTask;
 
   private taskService= inject(TaskService);
 
@@ -32,12 +43,22 @@ handleCheckBox(id:number){
 
 }
 
+updateTask(task:Task){
+this.selectedTask= task;
+
+this.formType='UPDATE';
+this.showModal=true;
+
+
+
+
+}
+
+
 deleteTask(id:number){
 this.tasks=this.taskService.deleteTask(id);
 }
 
-toggleshowModal(){
-  this.showModal=true;
-}
+
 
 }
