@@ -29,6 +29,8 @@
 
           <td><span class="status-dot {{task.completed ? 'completed' : 'in-progress'}}"></span>{{task.completed ? 'Completed' : 'In progress'}}</td>
           <td>{{task.dueDate | date:"MM-dd-YYYY" }}</td>
+
+          <td (click)="deleteTask(task.id)">X</td>
           </tr>
 
 
@@ -38,9 +40,12 @@
 
     </tbody>
    </table>
-   <div class="button-container">
+   <div class="button-container" (click)="toggleshowModal()">
     <button>Add New Task</button>
 
 	</div>
+  @if(showModal){
+    <app-task-form></app-task-form>
+  }
 </div>
 

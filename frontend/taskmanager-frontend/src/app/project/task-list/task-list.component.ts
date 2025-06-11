@@ -1,64 +1,43 @@
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
 import { Task } from '../../task.model';
 import { DatePipe } from '@angular/common';
+import { TaskService } from '../../task.service';
+import { TaskFormComponent } from '../task-form/task-form.component';
 
 @Component({
   selector: 'app-task-list',
   standalone: true,
-  imports: [DatePipe],
+  imports: [DatePipe,TaskFormComponent],
   templateUrl: './task-list.component.html',
   styleUrl: './task-list.component.css'
 })
 export class TaskListComponent {
- tasks: Task[] = [{
 
-  id: 1,
-name: "Develop Front end",
-description : "this is the description",
-completed : true,
-dueDate: new Date('06-03-2025'),
-project : 1
+  tasks:Task[];
 
-},
-{
+  showModal:boolean=false;
 
-  id: 2,
-name: "Design Wireframe",
-description : "this is the description",
-completed : false,
-dueDate: new Date('06-25-2025'),
-project : 3
+  private taskService= inject(TaskService);
 
-},
-{
-
-  id: 3,
-name: "Design Wireframe",
-description : "this is the description",
-completed : false,
-dueDate: new Date('06-25-2025'),
-project : 2
-
-},{
-
-  id: 4,
-name: "Design Wireframe",
-description : "this is the description",
-completed : false,
-dueDate: new Date('06-25-2025'),
-project : 1
-
-}
-
-]
+  constructor(){
+    this.tasks=this.taskService.getTasks();
+  }
 
 handleCheckBox(id:number){
   //console.log(id);
  const checkedIndex = this.tasks.findIndex((task)=>task.id===id);
- this.tasks[checkedIndex].completed=!this.tasks[checkedIndex].completed;
+ const updatedTask= this.tasks[checkedIndex];
+ updatedTask.completed=!updatedTask.completed;
+ this.tasks=this.taskService.updateTask(updatedTask);
+
 }
 
+deleteTask(id:number){
+this.tasks=this.taskService.deleteTask(id);
+}
 
-
+toggleshowModal(){
+  this.showModal=true;
+}
 
 }
