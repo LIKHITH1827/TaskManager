@@ -1,6 +1,7 @@
 package com.example.api.model;
 
 import java.time.LocalDate;
+import java.util.Date;
 
 import org.springframework.data.web.ProjectedPayload;
 
@@ -30,8 +31,8 @@ public class Task {
 	
 	private String name;
 	private String description;
-	@Column(nullable = false)
-	private Boolean completed=false;
+	
+	private Boolean completed;
 	private LocalDate dueDate;
 	
 	@ManyToOne(fetch=FetchType.LAZY)

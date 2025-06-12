@@ -1,4 +1,4 @@
-import { Component, EventEmitter, inject, Input, Output } from '@angular/core';
+import { Component, EventEmitter, inject, Input, Output, SimpleChange, SimpleChanges } from '@angular/core';
 import { FormGroup, ReactiveFormsModule, Validators } from '@angular/forms';
 import { FormBuilder } from '@angular/forms';
 import { Task } from '../../task.model';
@@ -17,7 +17,7 @@ export class TaskFormComponent {
   taskForm:FormGroup;
 
   //child to parent
-  @Output() closePanel= new EventEmitter<'SUBMIT'>();
+  @Output() closePanel= new EventEmitter<'SUBMIT' | 'CANCEL'>();
 
   @Input() currentTask: Task | null= null;
   @Input() formType: 'UPDATE' | 'CREATE' = 'CREATE';
@@ -35,17 +35,52 @@ constructor(private fb: FormBuilder){
   })
 }
 
+ngOnChanges(changes: SimpleChanges){
+if(changes['currentTask'] && changes['currentTask'].currentValue){
+  const task=changes['currentTask'].currentValue as Task;
+
+ const dueDateFormatted= task.dueDate ? new Date(task.dueDate).toISOString().substring(0,10): '';
+ this.taskForm.patchValue({
+...task,
+  dueDate: dueDateFormatted
+ });
+
+}
+
+
+}
+
+
+
+
 handleSubmit(){
   if(this.taskForm.valid){
     const newTask: Task= {
       ...this.taskForm.value,
       dueDate: new Date(this.taskForm.value.dueDate),
-      completed: false,
+      completed: this.formType==='UPDATE' ? this.taskForm.value.completed : false,
     };
-    this.taskService.addTask(newTask);
-    this.closePanel.emit('SUBMIT');
+
+    if(this.formType==='CREATE'){
+     this.taskService.addTask(newTask).subscribe(()=>{
+          this.closePanel.emit('SUBMIT');
+     });
+
+    }
+    else{
+      this.taskService.updateTask(newTask);
+      this.closePanel.emit('SUBMIT');
+    }
+
+  }
+
+
+  }
+
+  handleCancel(){
+    this.closePanel.emit('CANCEL');
   }
 }
 
 
-}
+

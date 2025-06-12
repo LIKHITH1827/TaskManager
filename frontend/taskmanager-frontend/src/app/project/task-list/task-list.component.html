@@ -19,7 +19,7 @@
     </thead>
     <tbody>
 
-         @for (task of tasks; track task.id) {
+         @for (task of tasks$ | async; track task.id) {
           <tr>
           <td>
             <label class="{{task.completed? 'completed-task' : ''}}">
@@ -28,7 +28,7 @@
 
 
           <td><span class="status-dot {{task.completed ? 'completed' : 'in-progress'}}"></span>{{task.completed ? 'Completed' : 'In progress'}}</td>
-          <td>{{task.dueDate | date:"MM-dd-YYYY" }}</td>
+          <td>{{task.dueDate | date:"MM-dd-yyyy" }}</td>
           <td (click)="updateTask(task)">✏️</td>
           <td (click)="deleteTask(task.id)">❌</td>
           </tr>
@@ -40,7 +40,7 @@
 
     </tbody>
    </table>
-   <div class="button-container" (click)="showModal=true">
+   <div class="button-container" (click)="addNewTask()">
     <button>Add New Task</button>
 
 	</div>

@@ -1,8 +1,10 @@
 import { Component, inject } from '@angular/core';
 import { Task } from '../../task.model';
-import { DatePipe } from '@angular/common';
+import { DatePipe, AsyncPipe } from '@angular/common';
 import { TaskService } from '../../task.service';
 import { TaskFormComponent } from '../task-form/task-form.component';
+import { Observable } from 'rxjs';
+
 
 const emptyTask={
   name:"",
@@ -17,21 +19,27 @@ const emptyTask={
 @Component({
   selector: 'app-task-list',
   standalone: true,
-  imports: [DatePipe,TaskFormComponent],
+  imports: [DatePipe,AsyncPipe,TaskFormComponent],
   templateUrl: './task-list.component.html',
   styleUrl: './task-list.component.css'
 })
 export class TaskListComponent {
 
-  tasks:Task[];
+  tasks:Task[]=[];
    formType: "UPDATE" | "CREATE" = 'CREATE';
   showModal:boolean=false;
   selectedTask : Task = emptyTask;
+  tasks$!:Observable<Task[]>
+
 
   private taskService= inject(TaskService);
 
   constructor(){
-    this.tasks=this.taskService.getTasks();
+    this.updateTasks();
+  }
+
+  updateTasks(){
+    this.tasks$ = this.taskService.getTasks();
   }
 
 handleCheckBox(id:number){
@@ -54,6 +62,13 @@ this.showModal=true;
 
 }
 
+
+
+addNewTask(){
+  this.selectedTask=emptyTask;
+  this.formType='CREATE';
+  this.showModal=true;
+}
 
 deleteTask(id:number){
 this.tasks=this.taskService.deleteTask(id);

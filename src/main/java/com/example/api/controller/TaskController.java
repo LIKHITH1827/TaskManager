@@ -18,8 +18,7 @@ import org.springframework.web.bind.annotation.RestController;
 import com.example.api.model.Task;
 import com.example.api.service.TaskService;
 
-//@CrossOrigin(origins = "http://localhost:4200", allowedHeaders = "*")
-
+@CrossOrigin(origins = "http://localhost:4200", allowedHeaders = "*")
 @RestController
 public class TaskController {
     
