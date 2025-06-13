@@ -28,7 +28,7 @@ constructor(private fb: FormBuilder){
     name: ['',Validators.required],
     description: [''],
     dueDate : ['',Validators.required],
-    id:[0],
+    id: [0],
     project: [0],
 
 
@@ -57,19 +57,23 @@ handleSubmit(){
   if(this.taskForm.valid){
     const newTask: Task= {
       ...this.taskForm.value,
+
       dueDate: new Date(this.taskForm.value.dueDate),
       completed: this.formType==='UPDATE' ? this.taskForm.value.completed : false,
     };
 
     if(this.formType==='CREATE'){
+
      this.taskService.addTask(newTask).subscribe(()=>{
           this.closePanel.emit('SUBMIT');
      });
 
     }
     else{
-      this.taskService.updateTask(newTask);
-      this.closePanel.emit('SUBMIT');
+      this.taskService.updateTask(newTask).subscribe(()=>{
+        this.closePanel.emit('SUBMIT');
+      });
+
     }
 
   }

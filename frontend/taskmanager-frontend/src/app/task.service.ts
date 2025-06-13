@@ -62,20 +62,20 @@ export class TaskService {
 
   addTask(task: Task){
 
-    return this.http.post(`${BASE_URL}/api/tasks`, {...task}) ;
+    return this.http.post(`${BASE_URL}/api/tasks`, {...task,id:null, project:null}) ;
   }
 
   updateTask(newTask:Task){
-    const updatedIndex= this.tasks.findIndex((task)=>task.id===newTask.id);
-    this.tasks[updatedIndex]=newTask;
-    return this.tasks;
+
+    return this.http.put(`${BASE_URL}/api/tasks/${newTask.id}}`,{...newTask,project:null});
+
+
   }
 
 
 deleteTask(id:number){
-  const taskIndex= this.tasks.findIndex((task)=>task.id===id);
-  this.tasks.splice(taskIndex,1);
-  return this.tasks;
+  return this.http.delete(`${BASE_URL}/api/tasks/${id}`);
+
 }
 
 

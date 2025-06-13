@@ -12,7 +12,7 @@ const emptyTask={
   dueDate: new Date(),
  completed: false,
  project:0,
- id:0,
+ id:4,
 };
 
 
@@ -38,7 +38,7 @@ export class TaskListComponent {
     this.updateTasks();
   }
 
-  updateTasks(){
+updateTasks(){
     this.tasks$ = this.taskService.getTasks();
   }
 
@@ -47,7 +47,7 @@ handleCheckBox(id:number){
  const checkedIndex = this.tasks.findIndex((task)=>task.id===id);
  const updatedTask= this.tasks[checkedIndex];
  updatedTask.completed=!updatedTask.completed;
- this.tasks=this.taskService.updateTask(updatedTask);
+ this.taskService.updateTask(updatedTask);
 
 }
 
@@ -71,9 +71,16 @@ addNewTask(){
 }
 
 deleteTask(id:number){
-this.tasks=this.taskService.deleteTask(id);
+this.taskService.deleteTask(id).subscribe(()=>{this.updateTasks();});
+
 }
 
+handleModalClose(type: 'SUBMIT' | 'CANCEL'){
+if(type==='SUBMIT'){
+   this.updateTasks;
+}
+this.showModal=false;
+}
 
 
 }

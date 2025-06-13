@@ -40,12 +40,12 @@
 
     </tbody>
    </table>
-   <div class="button-container" (click)="addNewTask()">
-    <button>Add New Task</button>
+   <div class="button-container">
+    <button (click)="addNewTask()">Add New Task</button>
 
 	</div>
   @if(showModal){
-    <app-task-form (closePanel)="showModal = false" [currentTask]="selectedTask" [formType]="formType"></app-task-form>
+    <app-task-form (closePanel)="handleModalClose($event)" [currentTask]="selectedTask" [formType]="formType"></app-task-form>
   }
 </div>
 
