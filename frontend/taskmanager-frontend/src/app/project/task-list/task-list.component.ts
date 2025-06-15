@@ -42,12 +42,14 @@ updateTasks(){
     this.tasks$ = this.taskService.getTasks();
   }
 
-handleCheckBox(id:number){
+handleCheckBox(task:Task){
   //console.log(id);
- const checkedIndex = this.tasks.findIndex((task)=>task.id===id);
- const updatedTask= this.tasks[checkedIndex];
- updatedTask.completed=!updatedTask.completed;
- this.taskService.updateTask(updatedTask);
+
+ const updatedTask= {...task, completed:!task.completed};
+
+ this.taskService.updateTask(updatedTask).subscribe(()=>{
+  task.completed = updatedTask.completed;
+ });
 
 }
 

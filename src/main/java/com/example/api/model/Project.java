@@ -32,11 +32,11 @@ public class Project {
    
   public void addTask(Task task) {
 	  tasks.add(task);
-	  task.setProject(this);
+	 task.setProject(this);
   }
   public void removeTask(Task task) {
 	  tasks.remove(task);
-	  task.setProject(null);
+	task.setProject(null);
   }
 public Long getId() {
 	return id;

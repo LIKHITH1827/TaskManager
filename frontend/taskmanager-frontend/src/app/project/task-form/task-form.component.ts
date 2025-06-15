@@ -65,6 +65,7 @@ handleSubmit(){
     if(this.formType==='CREATE'){
 
      this.taskService.addTask(newTask).subscribe(()=>{
+          
           this.closePanel.emit('SUBMIT');
      });
 

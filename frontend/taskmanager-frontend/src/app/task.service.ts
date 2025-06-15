@@ -62,12 +62,12 @@ export class TaskService {
 
   addTask(task: Task){
 
-    return this.http.post(`${BASE_URL}/api/tasks`, {...task,id:null, project:null}) ;
+    return this.http.post(`${BASE_URL}/api/tasks`, {...task,id:null,project:null}) ;
   }
 
   updateTask(newTask:Task){
 
-    return this.http.put(`${BASE_URL}/api/tasks/${newTask.id}}`,{...newTask,project:null});
+    return this.http.put(`${BASE_URL}/api/tasks/${newTask.id}`,{...newTask, project:null});
 
 
   }

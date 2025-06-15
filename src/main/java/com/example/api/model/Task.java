@@ -31,8 +31,8 @@ public class Task {
 	
 	private String name;
 	private String description;
-	
-	private Boolean completed;
+	@Column(nullable = false)
+	private Boolean completed=false;
 	private LocalDate dueDate;
 	
 	@ManyToOne(fetch=FetchType.LAZY)
@@ -79,5 +79,7 @@ public class Task {
 	public void setProject(Project project) {
 		this.project = project;
 	}
+	
+	
 	
 }
