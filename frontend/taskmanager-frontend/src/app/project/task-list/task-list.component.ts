@@ -77,7 +77,7 @@ this.taskService.deleteTask(id).subscribe(()=>{this.updateTasks();});
 
 handleModalClose(type: 'SUBMIT' | 'CANCEL'){
 if(type==='SUBMIT'){
-   this.updateTasks;
+   this.updateTasks();
 }
 this.showModal=false;
 }
