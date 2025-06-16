@@ -14,13 +14,10 @@ import lombok.RequiredArgsConstructor;
 @RequiredArgsConstructor
 public class ApplicationConfig {
 
-    
-	private final UserRepository repository;
+    @Autowired
+	private UserRepository repository;
 	
-	public ApplicationConfig(UserRepository repository) {
-		// TODO Auto-generated constructor stub
-		this.repository=repository;
-	}
+	
 	
 	@Bean
 	public UserDetailsService userDetailsService() {
