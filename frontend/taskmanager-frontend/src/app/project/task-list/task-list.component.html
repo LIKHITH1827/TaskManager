@@ -21,7 +21,7 @@
     </thead>
     <tbody>
 
-         @for (task of tasks$ | async; track task.id) {
+         @for (task of tasks; track task.id) {
           <tr>
           <td>
             <label class="{{task.completed? 'completed-task' : ''}}">

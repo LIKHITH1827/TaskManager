@@ -1,4 +1,4 @@
-import { Component, inject } from '@angular/core';
+import { Component, EventEmitter, inject, Output } from '@angular/core';
 import { Task } from '../../task.model';
 import { DatePipe, AsyncPipe } from '@angular/common';
 import { TaskService } from '../../task.service';
@@ -25,6 +25,9 @@ const emptyTask={
 })
 export class TaskListComponent {
 
+@Output() progressChanged= new EventEmitter<number>();
+
+
   tasks:Task[]=[];
    formType: "UPDATE" | "CREATE" = 'CREATE';
   showModal:boolean=false;
@@ -38,9 +41,23 @@ export class TaskListComponent {
     this.updateTasks();
   }
 
+private calculateAndEmitProgress(){
+const completed= this.tasks.filter(task=>task.completed===true).length;
+    const percentage=Math.round((completed)/(this.tasks.length)*100);
+    this.progressChanged.emit(percentage);
+}
+
+
 updateTasks(){
     this.tasks$ = this.taskService.getTasks();
+    this.tasks$.subscribe((tasks)=>{
+  this.tasks=tasks;
+   this.calculateAndEmitProgress();
+    })
   }
+
+
+
 
 handleCheckBox(task:Task){
   //console.log(id);
@@ -49,6 +66,7 @@ handleCheckBox(task:Task){
 
  this.taskService.updateTask(updatedTask).subscribe(()=>{
   task.completed = updatedTask.completed;
+  this.calculateAndEmitProgress();
  });
 
 }
