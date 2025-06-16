@@ -1,22 +1,22 @@
-2025-06-15T13:59:19.338-04:00  INFO 72239 --- [TaskManager] [restartedMain] com.example.api.TaskManagerApplication   : Starting TaskManagerApplication using Java 21.0.6 with PID 72239 (/Users/likhithreddyaddela/Documents/TaskManager/bin/main started by likhithreddyaddela in /Users/likhithreddyaddela/Documents/TaskManager)
-2025-06-15T13:59:19.342-04:00  INFO 72239 --- [TaskManager] [restartedMain] com.example.api.TaskManagerApplication   : No active profile set, falling back to 1 default profile: "default"
-2025-06-15T13:59:19.407-04:00  INFO 72239 --- [TaskManager] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2025-06-15T13:59:19.407-04:00  INFO 72239 --- [TaskManager] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2025-06-15T13:59:20.052-04:00  INFO 72239 --- [TaskManager] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2025-06-15T13:59:20.098-04:00  INFO 72239 --- [TaskManager] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 31 ms. Found 2 JPA repository interfaces.
-2025-06-15T13:59:20.482-04:00  INFO 72239 --- [TaskManager] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
-2025-06-15T13:59:20.490-04:00  INFO 72239 --- [TaskManager] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2025-06-15T13:59:20.491-04:00  INFO 72239 --- [TaskManager] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.41]
-2025-06-15T13:59:20.522-04:00  INFO 72239 --- [TaskManager] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2025-06-15T13:59:20.523-04:00  INFO 72239 --- [TaskManager] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1116 ms
-2025-06-15T13:59:20.645-04:00  INFO 72239 --- [TaskManager] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2025-06-15T13:59:20.700-04:00  INFO 72239 --- [TaskManager] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.15.Final
-2025-06-15T13:59:20.773-04:00  INFO 72239 --- [TaskManager] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
-2025-06-15T13:59:21.294-04:00  INFO 72239 --- [TaskManager] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2025-06-15T13:59:21.330-04:00  INFO 72239 --- [TaskManager] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2025-06-15T13:59:21.857-04:00  INFO 72239 --- [TaskManager] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@68e1f66c
-2025-06-15T13:59:21.858-04:00  INFO 72239 --- [TaskManager] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2025-06-15T13:59:21.974-04:00  INFO 72239 --- [TaskManager] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+2025-06-16T12:19:20.175-04:00  INFO 90920 --- [TaskManager] [restartedMain] com.example.api.TaskManagerApplication   : Starting TaskManagerApplication using Java 21.0.6 with PID 90920 (/Users/likhithreddyaddela/Documents/TaskManager/bin/main started by likhithreddyaddela in /Users/likhithreddyaddela/Documents/TaskManager)
+2025-06-16T12:19:20.178-04:00  INFO 90920 --- [TaskManager] [restartedMain] com.example.api.TaskManagerApplication   : No active profile set, falling back to 1 default profile: "default"
+2025-06-16T12:19:20.213-04:00  INFO 90920 --- [TaskManager] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-06-16T12:19:20.213-04:00  INFO 90920 --- [TaskManager] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-06-16T12:19:20.518-04:00  INFO 90920 --- [TaskManager] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-06-16T12:19:20.541-04:00  INFO 90920 --- [TaskManager] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 18 ms. Found 3 JPA repository interfaces.
+2025-06-16T12:19:20.757-04:00  INFO 90920 --- [TaskManager] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-06-16T12:19:20.764-04:00  INFO 90920 --- [TaskManager] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-06-16T12:19:20.764-04:00  INFO 90920 --- [TaskManager] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.41]
+2025-06-16T12:19:20.780-04:00  INFO 90920 --- [TaskManager] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-06-16T12:19:20.780-04:00  INFO 90920 --- [TaskManager] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 567 ms
+2025-06-16T12:19:20.857-04:00  INFO 90920 --- [TaskManager] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-06-16T12:19:20.885-04:00  INFO 90920 --- [TaskManager] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.15.Final
+2025-06-16T12:19:20.905-04:00  INFO 90920 --- [TaskManager] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-06-16T12:19:21.067-04:00  INFO 90920 --- [TaskManager] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-06-16T12:19:21.081-04:00  INFO 90920 --- [TaskManager] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-06-16T12:19:21.211-04:00  INFO 90920 --- [TaskManager] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@78fada6f
+2025-06-16T12:19:21.212-04:00  INFO 90920 --- [TaskManager] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-06-16T12:19:21.263-04:00  INFO 90920 --- [TaskManager] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
 	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
 	Database driver: undefined/unknown
 	Database version: 17.4
@@ -24,86 +24,83 @@
 	Isolation level: undefined/unknown
 	Minimum pool size: undefined/unknown
 	Maximum pool size: undefined/unknown
-2025-06-15T13:59:22.406-04:00  INFO 72239 --- [TaskManager] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2025-06-15T13:59:22.608-04:00  INFO 72239 --- [TaskManager] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2025-06-15T13:59:22.765-04:00  WARN 72239 --- [TaskManager] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2025-06-15T13:59:22.922-04:00  INFO 72239 --- [TaskManager] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2025-06-15T13:59:22.941-04:00  INFO 72239 --- [TaskManager] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
-2025-06-15T13:59:22.946-04:00  INFO 72239 --- [TaskManager] [restartedMain] com.example.api.TaskManagerApplication   : Started TaskManagerApplication in 3.878 seconds (process running for 4.534)
-2025-06-15T13:59:31.395-04:00  INFO 72239 --- [TaskManager] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2025-06-15T13:59:31.396-04:00  INFO 72239 --- [TaskManager] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2025-06-15T13:59:31.400-04:00  INFO 72239 --- [TaskManager] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 4 ms
-2025-06-15T13:59:31.522-04:00  INFO 72239 --- [TaskManager] [http-nio-8080-exec-1] c.e.api.controller.ProjectController     : GET api/tasks
-2025-06-15T13:59:42.501-04:00  INFO 72239 --- [TaskManager] [http-nio-8080-exec-3] c.e.api.controller.ProjectController     : GET api/tasks
-2025-06-15T14:01:51.003-04:00  INFO 72239 --- [TaskManager] [http-nio-8080-exec-5] c.e.api.controller.ProjectController     : GET api/tasks
-2025-06-15T14:02:03.795-04:00  INFO 72239 --- [TaskManager] [http-nio-8080-exec-7] c.e.api.controller.ProjectController     : GET api/tasks
-2025-06-15T14:02:07.366-04:00  INFO 72239 --- [TaskManager] [http-nio-8080-exec-9] c.e.api.controller.ProjectController     : GET api/tasks
-2025-06-15T14:02:21.868-04:00  INFO 72239 --- [TaskManager] [http-nio-8080-exec-1] c.e.api.controller.ProjectController     : GET api/tasks
-2025-06-15T14:02:24.762-04:00  INFO 72239 --- [TaskManager] [http-nio-8080-exec-3] c.e.api.controller.ProjectController     : GET api/tasks
-2025-06-15T14:07:09.361-04:00  INFO 72239 --- [TaskManager] [http-nio-8080-exec-5] c.e.api.controller.ProjectController     : GET api/tasks
-2025-06-15T14:07:19.490-04:00  INFO 72239 --- [TaskManager] [http-nio-8080-exec-7] c.e.api.controller.ProjectController     : GET api/tasks
-2025-06-15T14:07:24.511-04:00  INFO 72239 --- [TaskManager] [http-nio-8080-exec-9] c.e.api.controller.ProjectController     : GET api/tasks
-2025-06-15T14:07:29.990-04:00  INFO 72239 --- [TaskManager] [http-nio-8080-exec-1] c.e.api.controller.ProjectController     : GET api/tasks
-2025-06-15T14:07:30.029-04:00  INFO 72239 --- [TaskManager] [http-nio-8080-exec-2] c.e.api.controller.ProjectController     : GET api/tasks
-2025-06-15T14:07:38.880-04:00  INFO 72239 --- [TaskManager] [http-nio-8080-exec-4] c.e.api.controller.ProjectController     : GET api/tasks
-2025-06-15T14:07:38.901-04:00  INFO 72239 --- [TaskManager] [http-nio-8080-exec-5] c.e.api.controller.ProjectController     : GET api/tasks
-2025-06-15T14:07:50.202-04:00  INFO 72239 --- [TaskManager] [http-nio-8080-exec-8] c.e.api.controller.ProjectController     : GET api/tasks
-2025-06-15T14:07:50.236-04:00  INFO 72239 --- [TaskManager] [http-nio-8080-exec-9] c.e.api.controller.ProjectController     : GET api/tasks
-2025-06-15T14:08:00.729-04:00  INFO 72239 --- [TaskManager] [http-nio-8080-exec-2] c.e.api.controller.ProjectController     : GET api/tasks
-2025-06-15T14:08:00.767-04:00  INFO 72239 --- [TaskManager] [http-nio-8080-exec-2] c.e.api.controller.ProjectController     : GET api/tasks
-2025-06-15T14:08:03.848-04:00  INFO 72239 --- [TaskManager] [http-nio-8080-exec-6] c.e.api.controller.ProjectController     : GET api/tasks
-2025-06-15T14:08:03.881-04:00  INFO 72239 --- [TaskManager] [http-nio-8080-exec-7] c.e.api.controller.ProjectController     : GET api/tasks
-2025-06-15T14:14:10.653-04:00  INFO 72239 --- [TaskManager] [http-nio-8080-exec-10] c.e.api.controller.ProjectController     : GET api/tasks
-2025-06-15T14:14:10.681-04:00  INFO 72239 --- [TaskManager] [http-nio-8080-exec-1] c.e.api.controller.ProjectController     : GET api/tasks
-2025-06-15T14:34:28.392-04:00  INFO 72239 --- [TaskManager] [http-nio-8080-exec-4] c.e.api.controller.ProjectController     : GET api/tasks
-2025-06-15T14:34:29.011-04:00  INFO 72239 --- [TaskManager] [http-nio-8080-exec-5] c.e.api.controller.ProjectController     : GET api/tasks
-2025-06-15T14:38:27.743-04:00  WARN 72239 --- [TaskManager] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=4m5s434ms).
-2025-06-15T14:51:01.849-04:00  WARN 72239 --- [TaskManager] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=12m34s119ms).
-2025-06-15T14:52:54.394-04:00  WARN 72239 --- [TaskManager] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m22s540ms).
-2025-06-15T14:59:47.247-04:00  WARN 72239 --- [TaskManager] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=4m30s787ms).
-2025-06-15T15:04:38.203-04:00  WARN 72239 --- [TaskManager] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=3m6s454ms).
-2025-06-15T15:06:37.259-04:00  WARN 72239 --- [TaskManager] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m29s44ms).
-2025-06-15T15:09:14.763-04:00  WARN 72239 --- [TaskManager] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=2m7s519ms).
-2025-06-15T15:14:18.872-04:00  WARN 72239 --- [TaskManager] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=4m3s758ms).
-2025-06-15T15:49:38.664-04:00  WARN 72239 --- [TaskManager] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=35m19s792ms).
-2025-06-15T16:20:36.896-04:00  WARN 72239 --- [TaskManager] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=30m58s232ms).
-2025-06-15T16:26:52.730-04:00  WARN 72239 --- [TaskManager] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=6m15s834ms).
-2025-06-15T17:02:27.236-04:00  WARN 72239 --- [TaskManager] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=35m4s495ms).
-2025-06-15T17:21:30.617-04:00  WARN 72239 --- [TaskManager] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=18m33s386ms).
-2025-06-15T17:40:16.227-04:00  WARN 72239 --- [TaskManager] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=18m15s591ms).
-2025-06-15T17:56:11.757-04:00  WARN 72239 --- [TaskManager] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=15m55s531ms).
-2025-06-15T18:22:28.636-04:00  WARN 72239 --- [TaskManager] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=25m46s882ms).
-2025-06-15T18:26:55.081-04:00  WARN 72239 --- [TaskManager] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=3m56s443ms).
-2025-06-15T18:39:18.652-04:00  WARN 72239 --- [TaskManager] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=12m23s571ms).
-2025-06-15T18:50:33.634-04:00  WARN 72239 --- [TaskManager] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=10m44s979ms).
-2025-06-15T18:52:35.369-04:00  WARN 72239 --- [TaskManager] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=2m1s734ms).
-2025-06-15T18:54:34.448-04:00  WARN 72239 --- [TaskManager] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m29s74ms).
-2025-06-15T19:06:35.105-04:00  WARN 72239 --- [TaskManager] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=11m30s646ms).
-2025-06-15T19:06:36.038-04:00  INFO 72239 --- [TaskManager] [RMI TCP Connection(64)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
-2025-06-15T19:06:36.078-04:00  INFO 72239 --- [TaskManager] [RMI TCP Connection(64)-127.0.0.1] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
-2025-06-15T19:06:36.088-04:00  INFO 72239 --- [TaskManager] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
-2025-06-15T19:06:36.104-04:00  INFO 72239 --- [TaskManager] [RMI TCP Connection(64)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2025-06-15T19:06:36.128-04:00  INFO 72239 --- [TaskManager] [RMI TCP Connection(64)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2025-06-15T19:06:36.133-04:00  INFO 72239 --- [TaskManager] [RMI TCP Connection(64)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
-2025-06-15T19:08:10.515-04:00  INFO 75010 --- [TaskManager] [restartedMain] com.example.api.TaskManagerApplication   : Starting TaskManagerApplication using Java 21.0.6 with PID 75010 (/Users/likhithreddyaddela/Documents/TaskManager/bin/main started by likhithreddyaddela in /Users/likhithreddyaddela/Documents/TaskManager)
-2025-06-15T19:08:10.516-04:00  INFO 75010 --- [TaskManager] [restartedMain] com.example.api.TaskManagerApplication   : No active profile set, falling back to 1 default profile: "default"
-2025-06-15T19:08:10.542-04:00  INFO 75010 --- [TaskManager] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2025-06-15T19:08:10.542-04:00  INFO 75010 --- [TaskManager] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2025-06-15T19:08:10.834-04:00  INFO 75010 --- [TaskManager] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2025-06-15T19:08:10.855-04:00  INFO 75010 --- [TaskManager] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 17 ms. Found 2 JPA repository interfaces.
-2025-06-15T19:08:11.047-04:00  INFO 75010 --- [TaskManager] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
-2025-06-15T19:08:11.054-04:00  INFO 75010 --- [TaskManager] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2025-06-15T19:08:11.055-04:00  INFO 75010 --- [TaskManager] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.41]
-2025-06-15T19:08:11.070-04:00  INFO 75010 --- [TaskManager] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2025-06-15T19:08:11.070-04:00  INFO 75010 --- [TaskManager] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 527 ms
-2025-06-15T19:08:11.146-04:00  INFO 75010 --- [TaskManager] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2025-06-15T19:08:11.193-04:00  INFO 75010 --- [TaskManager] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.15.Final
-2025-06-15T19:08:11.209-04:00  INFO 75010 --- [TaskManager] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
-2025-06-15T19:08:11.339-04:00  INFO 75010 --- [TaskManager] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2025-06-15T19:08:11.353-04:00  INFO 75010 --- [TaskManager] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2025-06-15T19:08:11.457-04:00  INFO 75010 --- [TaskManager] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@6f778831
-2025-06-15T19:08:11.458-04:00  INFO 75010 --- [TaskManager] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2025-06-15T19:08:11.505-04:00  INFO 75010 --- [TaskManager] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+2025-06-16T12:19:21.339-04:00 ERROR 90920 --- [TaskManager] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Failed to initialize JPA EntityManagerFactory: Property 'com.example.api.model.User.role' is annotated '@Enumerated' but its type 'javax.management.relation.Role' is not an enum
+2025-06-16T12:19:21.339-04:00  WARN 90920 --- [TaskManager] [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Property 'com.example.api.model.User.role' is annotated '@Enumerated' but its type 'javax.management.relation.Role' is not an enum
+2025-06-16T12:19:21.340-04:00  INFO 90920 --- [TaskManager] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-06-16T12:19:21.365-04:00  INFO 90920 --- [TaskManager] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-06-16T12:19:21.366-04:00  INFO 90920 --- [TaskManager] [restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2025-06-16T12:19:21.373-04:00  INFO 90920 --- [TaskManager] [restartedMain] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2025-06-16T12:19:21.382-04:00 ERROR 90920 --- [TaskManager] [restartedMain] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Property 'com.example.api.model.User.role' is annotated '@Enumerated' but its type 'javax.management.relation.Role' is not an enum
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1826) ~[spring-beans-6.2.7.jar:6.2.7]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:607) ~[spring-beans-6.2.7.jar:6.2.7]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:529) ~[spring-beans-6.2.7.jar:6.2.7]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:339) ~[spring-beans-6.2.7.jar:6.2.7]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:373) ~[spring-beans-6.2.7.jar:6.2.7]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:337) ~[spring-beans-6.2.7.jar:6.2.7]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:207) ~[spring-beans-6.2.7.jar:6.2.7]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:970) ~[spring-context-6.2.7.jar:6.2.7]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:627) ~[spring-context-6.2.7.jar:6.2.7]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146) ~[spring-boot-3.5.0.jar:3.5.0]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:753) ~[spring-boot-3.5.0.jar:3.5.0]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:439) ~[spring-boot-3.5.0.jar:3.5.0]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:318) ~[spring-boot-3.5.0.jar:3.5.0]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1362) ~[spring-boot-3.5.0.jar:3.5.0]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1351) ~[spring-boot-3.5.0.jar:3.5.0]
+	at com.example.api.TaskManagerApplication.main(TaskManagerApplication.java:11) ~[main/:na]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[na:na]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50) ~[spring-boot-devtools-3.5.0.jar:3.5.0]
+Caused by: org.hibernate.AnnotationException: Property 'com.example.api.model.User.role' is annotated '@Enumerated' but its type 'javax.management.relation.Role' is not an enum
+	at org.hibernate.boot.model.internal.BasicValueBinder.prepareBasicAttribute(BasicValueBinder.java:814) ~[hibernate-core-6.6.15.Final.jar:6.6.15.Final]
+	at org.hibernate.boot.model.internal.BasicValueBinder.setType(BasicValueBinder.java:384) ~[hibernate-core-6.6.15.Final.jar:6.6.15.Final]
+	at org.hibernate.boot.model.internal.PropertyBinder.makePropertyAndValue(PropertyBinder.java:271) ~[hibernate-core-6.6.15.Final.jar:6.6.15.Final]
+	at org.hibernate.boot.model.internal.PropertyBinder.makePropertyValueAndBind(PropertyBinder.java:311) ~[hibernate-core-6.6.15.Final.jar:6.6.15.Final]
+	at org.hibernate.boot.model.internal.PropertyBinder.createBasicBinder(PropertyBinder.java:1251) ~[hibernate-core-6.6.15.Final.jar:6.6.15.Final]
+	at org.hibernate.boot.model.internal.PropertyBinder.bindBasic(PropertyBinder.java:1141) ~[hibernate-core-6.6.15.Final.jar:6.6.15.Final]
+	at org.hibernate.boot.model.internal.PropertyBinder.bindProperty(PropertyBinder.java:913) ~[hibernate-core-6.6.15.Final.jar:6.6.15.Final]
+	at org.hibernate.boot.model.internal.PropertyBinder.buildProperty(PropertyBinder.java:811) ~[hibernate-core-6.6.15.Final.jar:6.6.15.Final]
+	at org.hibernate.boot.model.internal.PropertyBinder.processElementAnnotations(PropertyBinder.java:732) ~[hibernate-core-6.6.15.Final.jar:6.6.15.Final]
+	at org.hibernate.boot.model.internal.EntityBinder.processIdPropertiesIfNotAlready(EntityBinder.java:1088) ~[hibernate-core-6.6.15.Final.jar:6.6.15.Final]
+	at org.hibernate.boot.model.internal.EntityBinder.handleIdentifier(EntityBinder.java:419) ~[hibernate-core-6.6.15.Final.jar:6.6.15.Final]
+	at org.hibernate.boot.model.internal.EntityBinder.bindEntityClass(EntityBinder.java:251) ~[hibernate-core-6.6.15.Final.jar:6.6.15.Final]
+	at org.hibernate.boot.model.internal.AnnotationBinder.bindClass(AnnotationBinder.java:404) ~[hibernate-core-6.6.15.Final.jar:6.6.15.Final]
+	at org.hibernate.boot.model.source.internal.annotations.AnnotationMetadataSourceProcessorImpl.processEntityHierarchies(AnnotationMetadataSourceProcessorImpl.java:266) ~[hibernate-core-6.6.15.Final.jar:6.6.15.Final]
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess$1.processEntityHierarchies(MetadataBuildingProcess.java:281) ~[hibernate-core-6.6.15.Final.jar:6.6.15.Final]
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.complete(MetadataBuildingProcess.java:324) ~[hibernate-core-6.6.15.Final.jar:6.6.15.Final]
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.metadata(EntityManagerFactoryBuilderImpl.java:1442) ~[hibernate-core-6.6.15.Final.jar:6.6.15.Final]
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1513) ~[hibernate-core-6.6.15.Final.jar:6.6.15.Final]
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:66) ~[spring-orm-6.2.7.jar:6.2.7]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:390) ~[spring-orm-6.2.7.jar:6.2.7]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:419) ~[spring-orm-6.2.7.jar:6.2.7]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:400) ~[spring-orm-6.2.7.jar:6.2.7]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:366) ~[spring-orm-6.2.7.jar:6.2.7]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1873) ~[spring-beans-6.2.7.jar:6.2.7]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1822) ~[spring-beans-6.2.7.jar:6.2.7]
+	... 18 common frames omitted
+
+2025-06-16T12:26:17.051-04:00  INFO 91156 --- [TaskManager] [restartedMain] com.example.api.TaskManagerApplication   : Starting TaskManagerApplication using Java 21.0.6 with PID 91156 (/Users/likhithreddyaddela/Documents/TaskManager/bin/main started by likhithreddyaddela in /Users/likhithreddyaddela/Documents/TaskManager)
+2025-06-16T12:26:17.052-04:00  INFO 91156 --- [TaskManager] [restartedMain] com.example.api.TaskManagerApplication   : No active profile set, falling back to 1 default profile: "default"
+2025-06-16T12:26:17.071-04:00  INFO 91156 --- [TaskManager] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-06-16T12:26:17.071-04:00  INFO 91156 --- [TaskManager] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-06-16T12:26:17.365-04:00  INFO 91156 --- [TaskManager] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-06-16T12:26:17.389-04:00  INFO 91156 --- [TaskManager] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 19 ms. Found 3 JPA repository interfaces.
+2025-06-16T12:26:17.605-04:00  INFO 91156 --- [TaskManager] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-06-16T12:26:17.613-04:00  INFO 91156 --- [TaskManager] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-06-16T12:26:17.613-04:00  INFO 91156 --- [TaskManager] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.41]
+2025-06-16T12:26:17.629-04:00  INFO 91156 --- [TaskManager] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-06-16T12:26:17.629-04:00  INFO 91156 --- [TaskManager] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 557 ms
+2025-06-16T12:26:17.706-04:00  INFO 91156 --- [TaskManager] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-06-16T12:26:17.736-04:00  INFO 91156 --- [TaskManager] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.15.Final
+2025-06-16T12:26:17.759-04:00  INFO 91156 --- [TaskManager] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-06-16T12:26:17.915-04:00  INFO 91156 --- [TaskManager] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-06-16T12:26:17.929-04:00  INFO 91156 --- [TaskManager] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-06-16T12:26:18.021-04:00  INFO 91156 --- [TaskManager] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@5d8a8215
+2025-06-16T12:26:18.021-04:00  INFO 91156 --- [TaskManager] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-06-16T12:26:18.086-04:00  INFO 91156 --- [TaskManager] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
 	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
 	Database driver: undefined/unknown
 	Database version: 17.4
@@ -111,130 +108,123 @@
 	Isolation level: undefined/unknown
 	Minimum pool size: undefined/unknown
 	Maximum pool size: undefined/unknown
-2025-06-15T19:08:11.968-04:00  INFO 75010 --- [TaskManager] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2025-06-15T19:08:12.086-04:00  INFO 75010 --- [TaskManager] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2025-06-15T19:08:12.207-04:00  WARN 75010 --- [TaskManager] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2025-06-15T19:08:12.353-04:00  INFO 75010 --- [TaskManager] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2025-06-15T19:08:12.371-04:00  INFO 75010 --- [TaskManager] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
-2025-06-15T19:08:12.376-04:00  INFO 75010 --- [TaskManager] [restartedMain] com.example.api.TaskManagerApplication   : Started TaskManagerApplication in 2.043 seconds (process running for 2.602)
-2025-06-15T19:09:43.945-04:00  INFO 75010 --- [TaskManager] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2025-06-15T19:09:43.946-04:00  INFO 75010 --- [TaskManager] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2025-06-15T19:09:43.950-04:00  INFO 75010 --- [TaskManager] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 4 ms
-2025-06-15T19:09:44.048-04:00  INFO 75010 --- [TaskManager] [http-nio-8080-exec-1] c.e.api.controller.ProjectController     : GET api/tasks
-2025-06-15T19:09:44.252-04:00  INFO 75010 --- [TaskManager] [http-nio-8080-exec-2] c.e.api.controller.ProjectController     : GET api/tasks
-2025-06-15T19:12:05.046-04:00  INFO 75010 --- [TaskManager] [http-nio-8080-exec-5] c.e.api.controller.ProjectController     : GET api/tasks
-2025-06-15T19:12:05.076-04:00  INFO 75010 --- [TaskManager] [http-nio-8080-exec-6] c.e.api.controller.ProjectController     : GET api/tasks
-2025-06-15T19:12:48.735-04:00  INFO 75010 --- [TaskManager] [http-nio-8080-exec-9] c.e.api.controller.ProjectController     : GET api/tasks
-2025-06-15T19:12:48.767-04:00  INFO 75010 --- [TaskManager] [http-nio-8080-exec-10] c.e.api.controller.ProjectController     : GET api/tasks
-2025-06-15T19:12:57.946-04:00  INFO 75010 --- [TaskManager] [http-nio-8080-exec-3] c.e.api.controller.ProjectController     : GET api/tasks
-2025-06-15T19:12:57.978-04:00  INFO 75010 --- [TaskManager] [http-nio-8080-exec-4] c.e.api.controller.ProjectController     : GET api/tasks
-2025-06-15T19:13:03.717-04:00  INFO 75010 --- [TaskManager] [http-nio-8080-exec-6] c.e.api.controller.ProjectController     : GET api/tasks
-2025-06-15T19:13:03.756-04:00  INFO 75010 --- [TaskManager] [http-nio-8080-exec-7] c.e.api.controller.ProjectController     : GET api/tasks
-2025-06-15T19:13:13.713-04:00  INFO 75010 --- [TaskManager] [http-nio-8080-exec-10] c.e.api.controller.ProjectController     : GET api/tasks
-2025-06-15T19:13:13.745-04:00  INFO 75010 --- [TaskManager] [http-nio-8080-exec-2] c.e.api.controller.ProjectController     : GET api/tasks
-2025-06-15T19:13:19.239-04:00  INFO 75010 --- [TaskManager] [http-nio-8080-exec-4] c.e.api.controller.ProjectController     : GET api/tasks
-2025-06-15T19:13:19.276-04:00  INFO 75010 --- [TaskManager] [http-nio-8080-exec-5] c.e.api.controller.ProjectController     : GET api/tasks
-2025-06-15T19:13:33.613-04:00  INFO 75010 --- [TaskManager] [http-nio-8080-exec-8] c.e.api.controller.ProjectController     : GET api/tasks
-2025-06-15T19:13:33.650-04:00  INFO 75010 --- [TaskManager] [http-nio-8080-exec-9] c.e.api.controller.ProjectController     : GET api/tasks
-2025-06-15T19:14:04.237-04:00  INFO 75010 --- [TaskManager] [http-nio-8080-exec-3] c.e.api.controller.ProjectController     : GET api/tasks
-2025-06-15T19:14:04.273-04:00  INFO 75010 --- [TaskManager] [http-nio-8080-exec-1] c.e.api.controller.ProjectController     : GET api/tasks
-2025-06-15T19:14:14.032-04:00  INFO 75010 --- [TaskManager] [http-nio-8080-exec-7] c.e.api.controller.ProjectController     : GET api/tasks
-2025-06-15T19:14:14.065-04:00  INFO 75010 --- [TaskManager] [http-nio-8080-exec-6] c.e.api.controller.ProjectController     : GET api/tasks
-2025-06-15T19:14:18.641-04:00  INFO 75010 --- [TaskManager] [http-nio-8080-exec-2] c.e.api.controller.ProjectController     : GET api/tasks
-2025-06-15T19:14:18.672-04:00  INFO 75010 --- [TaskManager] [http-nio-8080-exec-10] c.e.api.controller.ProjectController     : GET api/tasks
-2025-06-15T19:14:25.663-04:00  INFO 75010 --- [TaskManager] [http-nio-8080-exec-4] c.e.api.controller.ProjectController     : GET api/tasks
-2025-06-15T19:14:25.688-04:00  INFO 75010 --- [TaskManager] [http-nio-8080-exec-5] c.e.api.controller.ProjectController     : GET api/tasks
-2025-06-15T19:14:31.276-04:00  INFO 75010 --- [TaskManager] [http-nio-8080-exec-8] c.e.api.controller.ProjectController     : GET api/tasks
-2025-06-15T19:14:31.319-04:00  INFO 75010 --- [TaskManager] [http-nio-8080-exec-9] c.e.api.controller.ProjectController     : GET api/tasks
-2025-06-15T19:14:51.252-04:00  INFO 75010 --- [TaskManager] [http-nio-8080-exec-10] c.e.api.controller.ProjectController     : GET api/tasks
-2025-06-15T19:14:51.284-04:00  INFO 75010 --- [TaskManager] [http-nio-8080-exec-10] c.e.api.controller.ProjectController     : GET api/tasks
-2025-06-15T19:15:07.375-04:00  INFO 75010 --- [TaskManager] [http-nio-8080-exec-5] c.e.api.controller.ProjectController     : GET api/tasks
-2025-06-15T19:15:07.405-04:00  INFO 75010 --- [TaskManager] [http-nio-8080-exec-6] c.e.api.controller.ProjectController     : GET api/tasks
-2025-06-15T19:15:11.421-04:00  INFO 75010 --- [TaskManager] [http-nio-8080-exec-9] c.e.api.controller.ProjectController     : GET api/tasks
-2025-06-15T19:15:11.452-04:00  INFO 75010 --- [TaskManager] [http-nio-8080-exec-2] c.e.api.controller.ProjectController     : GET api/tasks
-2025-06-15T19:15:36.236-04:00  INFO 75010 --- [TaskManager] [http-nio-8080-exec-4] c.e.api.controller.ProjectController     : GET api/tasks
-2025-06-15T19:15:36.271-04:00  INFO 75010 --- [TaskManager] [http-nio-8080-exec-3] c.e.api.controller.ProjectController     : GET api/tasks
-2025-06-15T19:16:25.238-04:00  INFO 75010 --- [TaskManager] [http-nio-8080-exec-7] c.e.api.controller.ProjectController     : GET api/tasks
-2025-06-15T19:16:25.273-04:00  INFO 75010 --- [TaskManager] [http-nio-8080-exec-8] c.e.api.controller.ProjectController     : GET api/tasks
-2025-06-15T19:27:46.526-04:00  INFO 75010 --- [TaskManager] [http-nio-8080-exec-1] c.e.api.controller.ProjectController     : GET api/tasks
-2025-06-15T19:27:46.589-04:00  INFO 75010 --- [TaskManager] [http-nio-8080-exec-10] c.e.api.controller.ProjectController     : GET api/tasks
-2025-06-15T19:28:09.800-04:00  INFO 75010 --- [TaskManager] [http-nio-8080-exec-5] c.e.api.controller.ProjectController     : GET api/tasks
-2025-06-15T19:28:09.828-04:00  INFO 75010 --- [TaskManager] [http-nio-8080-exec-5] c.e.api.controller.ProjectController     : GET api/tasks
-2025-06-15T19:28:15.181-04:00  INFO 75010 --- [TaskManager] [http-nio-8080-exec-9] c.e.api.controller.ProjectController     : GET api/tasks
-2025-06-15T19:28:15.209-04:00  INFO 75010 --- [TaskManager] [http-nio-8080-exec-2] c.e.api.controller.ProjectController     : GET api/tasks
-2025-06-15T19:28:56.195-04:00  INFO 75010 --- [TaskManager] [http-nio-8080-exec-4] c.e.api.controller.ProjectController     : GET api/tasks
-2025-06-15T19:28:56.228-04:00  INFO 75010 --- [TaskManager] [http-nio-8080-exec-3] c.e.api.controller.ProjectController     : GET api/tasks
-2025-06-15T19:32:10.861-04:00  INFO 75010 --- [TaskManager] [http-nio-8080-exec-8] c.e.api.controller.ProjectController     : GET api/tasks
-2025-06-15T19:32:13.115-04:00  INFO 75010 --- [TaskManager] [http-nio-8080-exec-9] c.e.api.controller.ProjectController     : GET api/tasks
-2025-06-15T19:32:13.122-04:00  INFO 75010 --- [TaskManager] [http-nio-8080-exec-2] c.e.api.controller.ProjectController     : GET api/tasks
-2025-06-15T19:32:51.175-04:00  INFO 75010 --- [TaskManager] [http-nio-8080-exec-4] c.e.api.controller.ProjectController     : GET api/tasks
-2025-06-15T19:32:51.220-04:00  INFO 75010 --- [TaskManager] [http-nio-8080-exec-3] c.e.api.controller.ProjectController     : GET api/tasks
-2025-06-15T19:32:54.140-04:00  INFO 75010 --- [TaskManager] [http-nio-8080-exec-8] c.e.api.controller.ProjectController     : GET api/tasks
-2025-06-15T19:32:54.176-04:00  INFO 75010 --- [TaskManager] [http-nio-8080-exec-7] c.e.api.controller.ProjectController     : GET api/tasks
-2025-06-15T19:33:13.176-04:00  INFO 75010 --- [TaskManager] [http-nio-8080-exec-10] c.e.api.controller.ProjectController     : GET api/tasks
-2025-06-15T19:33:15.132-04:00  INFO 75010 --- [TaskManager] [http-nio-8080-exec-1] c.e.api.controller.ProjectController     : GET api/tasks
-2025-06-15T19:33:15.141-04:00  INFO 75010 --- [TaskManager] [http-nio-8080-exec-4] c.e.api.controller.ProjectController     : GET api/tasks
-2025-06-15T19:33:20.178-04:00  INFO 75010 --- [TaskManager] [http-nio-8080-exec-5] c.e.api.controller.ProjectController     : GET api/tasks
-2025-06-15T19:33:20.206-04:00  INFO 75010 --- [TaskManager] [http-nio-8080-exec-8] c.e.api.controller.ProjectController     : GET api/tasks
-2025-06-15T19:33:27.162-04:00  INFO 75010 --- [TaskManager] [http-nio-8080-exec-9] c.e.api.controller.ProjectController     : GET api/tasks
-2025-06-15T19:33:27.188-04:00  INFO 75010 --- [TaskManager] [http-nio-8080-exec-10] c.e.api.controller.ProjectController     : GET api/tasks
-2025-06-15T19:33:37.146-04:00  INFO 75010 --- [TaskManager] [http-nio-8080-exec-3] c.e.api.controller.ProjectController     : GET api/tasks
-2025-06-15T19:33:37.173-04:00  INFO 75010 --- [TaskManager] [http-nio-8080-exec-6] c.e.api.controller.ProjectController     : GET api/tasks
-2025-06-15T19:34:16.116-04:00  INFO 75010 --- [TaskManager] [http-nio-8080-exec-7] c.e.api.controller.ProjectController     : GET api/tasks
-2025-06-15T19:34:16.145-04:00  INFO 75010 --- [TaskManager] [http-nio-8080-exec-2] c.e.api.controller.ProjectController     : GET api/tasks
-2025-06-15T19:34:19.232-04:00  INFO 75010 --- [TaskManager] [http-nio-8080-exec-4] c.e.api.controller.ProjectController     : GET api/tasks
-2025-06-15T19:34:19.254-04:00  INFO 75010 --- [TaskManager] [http-nio-8080-exec-4] c.e.api.controller.ProjectController     : GET api/tasks
-2025-06-15T19:34:59.078-04:00  INFO 75010 --- [TaskManager] [http-nio-8080-exec-2] c.e.api.controller.ProjectController     : GET api/tasks
-2025-06-15T19:34:59.087-04:00  INFO 75010 --- [TaskManager] [http-nio-8080-exec-9] c.e.api.controller.ProjectController     : GET api/tasks
-2025-06-15T19:38:21.418-04:00  INFO 75010 --- [TaskManager] [http-nio-8080-exec-3] c.e.api.controller.ProjectController     : GET api/tasks
-2025-06-15T19:38:21.427-04:00  INFO 75010 --- [TaskManager] [http-nio-8080-exec-5] c.e.api.controller.ProjectController     : GET api/tasks
-2025-06-15T19:39:30.238-04:00  INFO 75010 --- [TaskManager] [http-nio-8080-exec-9] c.e.api.controller.ProjectController     : GET api/tasks
-2025-06-15T19:39:30.258-04:00  INFO 75010 --- [TaskManager] [http-nio-8080-exec-10] c.e.api.controller.ProjectController     : GET api/tasks
-2025-06-15T19:39:53.719-04:00  INFO 75010 --- [TaskManager] [http-nio-8080-exec-8] c.e.api.controller.ProjectController     : GET api/tasks
-2025-06-15T19:39:53.726-04:00  INFO 75010 --- [TaskManager] [http-nio-8080-exec-3] c.e.api.controller.ProjectController     : GET api/tasks
-2025-06-15T19:45:24.234-04:00  INFO 75010 --- [TaskManager] [http-nio-8080-exec-2] c.e.api.controller.ProjectController     : GET api/tasks
-2025-06-15T19:45:24.281-04:00  INFO 75010 --- [TaskManager] [http-nio-8080-exec-7] c.e.api.controller.ProjectController     : GET api/tasks
-2025-06-15T19:45:52.428-04:00  INFO 75010 --- [TaskManager] [http-nio-8080-exec-1] c.e.api.controller.ProjectController     : GET api/tasks
-2025-06-15T19:45:52.447-04:00  INFO 75010 --- [TaskManager] [http-nio-8080-exec-4] c.e.api.controller.ProjectController     : GET api/tasks
-2025-06-15T19:46:13.560-04:00  INFO 75010 --- [TaskManager] [http-nio-8080-exec-3] c.e.api.controller.ProjectController     : GET api/tasks
-2025-06-15T19:46:13.596-04:00  INFO 75010 --- [TaskManager] [http-nio-8080-exec-5] c.e.api.controller.ProjectController     : GET api/tasks
-2025-06-15T19:46:27.143-04:00  INFO 75010 --- [TaskManager] [http-nio-8080-exec-9] c.e.api.controller.ProjectController     : GET api/tasks
-2025-06-15T19:46:27.174-04:00  INFO 75010 --- [TaskManager] [http-nio-8080-exec-10] c.e.api.controller.ProjectController     : GET api/tasks
-2025-06-15T19:46:34.594-04:00  INFO 75010 --- [TaskManager] [http-nio-8080-exec-6] c.e.api.controller.ProjectController     : GET api/tasks
-2025-06-15T19:46:34.611-04:00  INFO 75010 --- [TaskManager] [http-nio-8080-exec-8] c.e.api.controller.ProjectController     : GET api/tasks
-2025-06-15T19:46:39.164-04:00  INFO 75010 --- [TaskManager] [http-nio-8080-exec-2] c.e.api.controller.ProjectController     : GET api/tasks
-2025-06-15T19:46:39.200-04:00  INFO 75010 --- [TaskManager] [http-nio-8080-exec-7] c.e.api.controller.ProjectController     : GET api/tasks
-2025-06-15T19:46:45.128-04:00  INFO 75010 --- [TaskManager] [http-nio-8080-exec-4] c.e.api.controller.ProjectController     : GET api/tasks
-2025-06-15T19:46:45.153-04:00  INFO 75010 --- [TaskManager] [http-nio-8080-exec-1] c.e.api.controller.ProjectController     : GET api/tasks
-2025-06-15T19:47:16.771-04:00  INFO 75010 --- [TaskManager] [http-nio-8080-exec-3] c.e.api.controller.ProjectController     : GET api/tasks
-2025-06-15T19:47:16.789-04:00  INFO 75010 --- [TaskManager] [http-nio-8080-exec-5] c.e.api.controller.ProjectController     : GET api/tasks
-2025-06-15T19:47:17.443-04:00  INFO 75010 --- [TaskManager] [http-nio-8080-exec-2] c.e.api.controller.ProjectController     : GET api/tasks
-2025-06-15T19:47:17.454-04:00  INFO 75010 --- [TaskManager] [http-nio-8080-exec-7] c.e.api.controller.ProjectController     : GET api/tasks
-2025-06-15T19:47:18.095-04:00  INFO 75010 --- [TaskManager] [http-nio-8080-exec-10] c.e.api.controller.ProjectController     : GET api/tasks
-2025-06-15T19:47:18.105-04:00  INFO 75010 --- [TaskManager] [http-nio-8080-exec-10] c.e.api.controller.ProjectController     : GET api/tasks
-2025-06-15T19:47:35.948-04:00  INFO 75010 --- [TaskManager] [http-nio-8080-exec-6] c.e.api.controller.ProjectController     : GET api/tasks
-2025-06-15T19:47:35.960-04:00  INFO 75010 --- [TaskManager] [http-nio-8080-exec-3] c.e.api.controller.ProjectController     : GET api/tasks
-2025-06-15T19:47:45.047-04:00  INFO 75010 --- [TaskManager] [http-nio-8080-exec-9] c.e.api.controller.ProjectController     : GET api/tasks
-2025-06-15T19:47:45.073-04:00  INFO 75010 --- [TaskManager] [http-nio-8080-exec-10] c.e.api.controller.ProjectController     : GET api/tasks
-2025-06-15T19:47:50.113-04:00  INFO 75010 --- [TaskManager] [http-nio-8080-exec-3] c.e.api.controller.ProjectController     : GET api/tasks
-2025-06-15T19:47:50.121-04:00  INFO 75010 --- [TaskManager] [http-nio-8080-exec-2] c.e.api.controller.ProjectController     : GET api/tasks
-2025-06-15T20:17:08.443-04:00  INFO 75010 --- [TaskManager] [http-nio-8080-exec-1] c.e.api.controller.ProjectController     : GET api/tasks
-2025-06-15T20:17:11.482-04:00  INFO 75010 --- [TaskManager] [http-nio-8080-exec-8] c.e.api.controller.ProjectController     : GET api/tasks
-2025-06-15T20:17:12.149-04:00  INFO 75010 --- [TaskManager] [http-nio-8080-exec-6] c.e.api.controller.ProjectController     : GET api/tasks
-2025-06-15T20:17:19.796-04:00  INFO 75010 --- [TaskManager] [http-nio-8080-exec-7] c.e.api.controller.ProjectController     : GET api/tasks
-2025-06-15T20:18:15.500-04:00  INFO 75010 --- [TaskManager] [http-nio-8080-exec-9] c.e.api.controller.ProjectController     : GET api/tasks
-2025-06-15T20:18:40.776-04:00  INFO 75010 --- [TaskManager] [http-nio-8080-exec-2] c.e.api.controller.ProjectController     : GET api/tasks
-2025-06-15T20:19:00.057-04:00  INFO 75010 --- [TaskManager] [http-nio-8080-exec-2] c.e.api.controller.ProjectController     : GET api/tasks
-2025-06-15T20:19:03.379-04:00  INFO 75010 --- [TaskManager] [http-nio-8080-exec-5] c.e.api.controller.ProjectController     : GET api/tasks
-2025-06-15T20:19:04.047-04:00  INFO 75010 --- [TaskManager] [http-nio-8080-exec-7] c.e.api.controller.ProjectController     : GET api/tasks
-2025-06-15T20:19:04.814-04:00  INFO 75010 --- [TaskManager] [http-nio-8080-exec-10] c.e.api.controller.ProjectController     : GET api/tasks
-2025-06-15T20:19:05.373-04:00  INFO 75010 --- [TaskManager] [http-nio-8080-exec-1] c.e.api.controller.ProjectController     : GET api/tasks
-2025-06-15T21:05:06.962-04:00  INFO 75010 --- [TaskManager] [http-nio-8080-exec-3] c.e.api.controller.ProjectController     : GET api/tasks
-2025-06-15T21:05:09.198-04:00  INFO 75010 --- [TaskManager] [http-nio-8080-exec-2] c.e.api.controller.ProjectController     : GET api/tasks
-2025-06-15T21:14:48.430-04:00  INFO 75010 --- [TaskManager] [http-nio-8080-exec-1] c.e.api.controller.ProjectController     : GET api/tasks
-2025-06-15T21:29:09.186-04:00  INFO 75010 --- [TaskManager] [RMI TCP Connection(145)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
-2025-06-15T21:29:09.243-04:00  INFO 75010 --- [TaskManager] [RMI TCP Connection(145)-127.0.0.1] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
-2025-06-15T21:29:09.251-04:00  INFO 75010 --- [TaskManager] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
-2025-06-15T21:29:09.278-04:00  INFO 75010 --- [TaskManager] [RMI TCP Connection(145)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2025-06-15T21:29:09.303-04:00  INFO 75010 --- [TaskManager] [RMI TCP Connection(145)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2025-06-15T21:29:09.307-04:00  INFO 75010 --- [TaskManager] [RMI TCP Connection(145)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-06-16T12:26:18.523-04:00  INFO 91156 --- [TaskManager] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-06-16T12:26:18.708-04:00  INFO 91156 --- [TaskManager] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-06-16T12:26:18.834-04:00  WARN 91156 --- [TaskManager] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-06-16T12:26:19.053-04:00  WARN 91156 --- [TaskManager] [restartedMain] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 7aec7891-3834-456e-9a40-14748816dd8b
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2025-06-16T12:26:19.057-04:00  INFO 91156 --- [TaskManager] [restartedMain] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2025-06-16T12:26:19.117-04:00  INFO 91156 --- [TaskManager] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-06-16T12:26:19.139-04:00  INFO 91156 --- [TaskManager] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-06-16T12:26:19.145-04:00  INFO 91156 --- [TaskManager] [restartedMain] com.example.api.TaskManagerApplication   : Started TaskManagerApplication in 2.272 seconds (process running for 2.758)
+2025-06-16T14:42:23.417-04:00  INFO 91156 --- [TaskManager] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-06-16T14:42:23.424-04:00  INFO 91156 --- [TaskManager] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-06-16T14:42:23.459-04:00  INFO 91156 --- [TaskManager] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 32 ms
+2025-06-16T14:48:52.581-04:00  WARN 91156 --- [TaskManager] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=6m33s282ms).
+2025-06-16T14:52:31.120-04:00  WARN 91156 --- [TaskManager] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=3m38s540ms).
+2025-06-16T15:11:05.494-04:00  WARN 91156 --- [TaskManager] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=18m4s363ms).
+2025-06-16T15:20:51.327-04:00  WARN 91156 --- [TaskManager] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=9m45s832ms).
+2025-06-16T15:39:04.222-04:00  WARN 91156 --- [TaskManager] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=17m42s885ms).
+2025-06-16T15:57:52.308-04:00  WARN 91156 --- [TaskManager] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=16m48s64ms).
+2025-06-16T16:15:19.858-04:00  WARN 91156 --- [TaskManager] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=15m57s540ms).
+2025-06-16T16:21:49.211-04:00  INFO 91156 --- [TaskManager] [RMI TCP Connection(156)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2025-06-16T16:21:49.246-04:00  INFO 91156 --- [TaskManager] [RMI TCP Connection(156)-127.0.0.1] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-06-16T16:21:49.251-04:00  INFO 91156 --- [TaskManager] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-06-16T16:21:49.266-04:00  INFO 91156 --- [TaskManager] [RMI TCP Connection(156)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-06-16T16:21:49.289-04:00  INFO 91156 --- [TaskManager] [RMI TCP Connection(156)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-06-16T16:21:49.294-04:00  INFO 91156 --- [TaskManager] [RMI TCP Connection(156)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-06-16T16:25:05.941-04:00  INFO 96996 --- [TaskManager] [restartedMain] com.example.api.TaskManagerApplication   : Starting TaskManagerApplication using Java 21.0.6 with PID 96996 (/Users/likhithreddyaddela/Documents/TaskManager/bin/main started by likhithreddyaddela in /Users/likhithreddyaddela/Documents/TaskManager)
+2025-06-16T16:25:05.942-04:00  INFO 96996 --- [TaskManager] [restartedMain] com.example.api.TaskManagerApplication   : No active profile set, falling back to 1 default profile: "default"
+2025-06-16T16:25:05.961-04:00  INFO 96996 --- [TaskManager] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-06-16T16:25:05.961-04:00  INFO 96996 --- [TaskManager] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-06-16T16:25:06.282-04:00  INFO 96996 --- [TaskManager] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-06-16T16:25:06.312-04:00  INFO 96996 --- [TaskManager] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 25 ms. Found 3 JPA repository interfaces.
+2025-06-16T16:25:06.546-04:00  INFO 96996 --- [TaskManager] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-06-16T16:25:06.554-04:00  INFO 96996 --- [TaskManager] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-06-16T16:25:06.554-04:00  INFO 96996 --- [TaskManager] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.41]
+2025-06-16T16:25:06.571-04:00  INFO 96996 --- [TaskManager] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-06-16T16:25:06.571-04:00  INFO 96996 --- [TaskManager] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 609 ms
+2025-06-16T16:25:06.648-04:00  INFO 96996 --- [TaskManager] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-06-16T16:25:06.674-04:00  INFO 96996 --- [TaskManager] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.15.Final
+2025-06-16T16:25:06.690-04:00  INFO 96996 --- [TaskManager] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-06-16T16:25:06.825-04:00  INFO 96996 --- [TaskManager] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-06-16T16:25:06.839-04:00  INFO 96996 --- [TaskManager] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-06-16T16:25:06.930-04:00  INFO 96996 --- [TaskManager] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@69f84b63
+2025-06-16T16:25:06.931-04:00  INFO 96996 --- [TaskManager] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-06-16T16:25:06.981-04:00  INFO 96996 --- [TaskManager] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 17.4
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-06-16T16:25:07.405-04:00  INFO 96996 --- [TaskManager] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-06-16T16:25:07.537-04:00  INFO 96996 --- [TaskManager] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-06-16T16:25:07.653-04:00  WARN 96996 --- [TaskManager] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-06-16T16:25:07.851-04:00  WARN 96996 --- [TaskManager] [restartedMain] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 7782fee8-d9c4-486c-a972-d0c55eaeee99
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2025-06-16T16:25:07.854-04:00  INFO 96996 --- [TaskManager] [restartedMain] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2025-06-16T16:25:07.908-04:00  INFO 96996 --- [TaskManager] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-06-16T16:25:07.927-04:00  INFO 96996 --- [TaskManager] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-06-16T16:25:07.932-04:00  INFO 96996 --- [TaskManager] [restartedMain] com.example.api.TaskManagerApplication   : Started TaskManagerApplication in 2.174 seconds (process running for 2.672)
+2025-06-16T16:25:11.359-04:00  INFO 96996 --- [TaskManager] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-06-16T16:25:11.360-04:00  INFO 96996 --- [TaskManager] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-06-16T16:25:11.362-04:00  INFO 96996 --- [TaskManager] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2025-06-16T16:44:10.840-04:00  INFO 96996 --- [TaskManager] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 18 class path changes (0 additions, 0 deletions, 18 modifications)
+2025-06-16T16:44:10.936-04:00  INFO 96996 --- [TaskManager] [Thread-5] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-06-16T16:44:10.954-04:00  INFO 96996 --- [TaskManager] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-06-16T16:44:10.988-04:00  INFO 96996 --- [TaskManager] [Thread-5] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-06-16T16:44:11.044-04:00  INFO 96996 --- [TaskManager] [Thread-5] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-06-16T16:44:11.062-04:00  INFO 96996 --- [TaskManager] [Thread-5] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-06-16T16:44:11.291-04:00  INFO 96996 --- [TaskManager] [restartedMain] com.example.api.TaskManagerApplication   : Starting TaskManagerApplication using Java 21.0.6 with PID 96996 (/Users/likhithreddyaddela/Documents/TaskManager/bin/main started by likhithreddyaddela in /Users/likhithreddyaddela/Documents/TaskManager)
+2025-06-16T16:44:11.291-04:00  INFO 96996 --- [TaskManager] [restartedMain] com.example.api.TaskManagerApplication   : No active profile set, falling back to 1 default profile: "default"
+2025-06-16T16:44:11.521-04:00  INFO 96996 --- [TaskManager] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-06-16T16:44:11.530-04:00  INFO 96996 --- [TaskManager] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 6 ms. Found 3 JPA repository interfaces.
+2025-06-16T16:44:11.610-04:00  INFO 96996 --- [TaskManager] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-06-16T16:44:11.611-04:00  INFO 96996 --- [TaskManager] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-06-16T16:44:11.611-04:00  INFO 96996 --- [TaskManager] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.41]
+2025-06-16T16:44:11.622-04:00  INFO 96996 --- [TaskManager] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-06-16T16:44:11.622-04:00  INFO 96996 --- [TaskManager] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 330 ms
+2025-06-16T16:44:11.652-04:00  INFO 96996 --- [TaskManager] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-06-16T16:44:11.653-04:00  INFO 96996 --- [TaskManager] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-06-16T16:44:11.657-04:00  INFO 96996 --- [TaskManager] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-06-16T16:44:11.658-04:00  INFO 96996 --- [TaskManager] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
+2025-06-16T16:44:11.701-04:00  INFO 96996 --- [TaskManager] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-2 - Added connection org.postgresql.jdbc.PgConnection@166694c7
+2025-06-16T16:44:11.702-04:00  INFO 96996 --- [TaskManager] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
+2025-06-16T16:44:11.724-04:00  INFO 96996 --- [TaskManager] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-2)']
+	Database driver: undefined/unknown
+	Database version: 17.4
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-06-16T16:44:11.777-04:00  INFO 96996 --- [TaskManager] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-06-16T16:44:11.887-04:00  INFO 96996 --- [TaskManager] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-06-16T16:44:11.923-04:00  WARN 96996 --- [TaskManager] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-06-16T16:44:12.001-04:00  WARN 96996 --- [TaskManager] [restartedMain] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 474877e0-22b6-412f-aa15-a7d31e076955
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2025-06-16T16:44:12.001-04:00  INFO 96996 --- [TaskManager] [restartedMain] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2025-06-16T16:44:12.019-04:00  INFO 96996 --- [TaskManager] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-06-16T16:44:12.025-04:00  INFO 96996 --- [TaskManager] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-06-16T16:44:12.028-04:00  INFO 96996 --- [TaskManager] [restartedMain] com.example.api.TaskManagerApplication   : Started TaskManagerApplication in 0.754 seconds (process running for 1146.86)
+2025-06-16T16:44:12.029-04:00  INFO 96996 --- [TaskManager] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2025-06-16T16:51:46.007-04:00  INFO 96996 --- [TaskManager] [RMI TCP Connection(30)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2025-06-16T16:51:46.021-04:00  INFO 96996 --- [TaskManager] [RMI TCP Connection(30)-127.0.0.1] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-06-16T16:51:46.024-04:00  INFO 96996 --- [TaskManager] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-06-16T16:51:46.029-04:00  INFO 96996 --- [TaskManager] [RMI TCP Connection(30)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-06-16T16:51:46.036-04:00  INFO 96996 --- [TaskManager] [RMI TCP Connection(30)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown initiated...
+2025-06-16T16:51:46.039-04:00  INFO 96996 --- [TaskManager] [RMI TCP Connection(30)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown completed.

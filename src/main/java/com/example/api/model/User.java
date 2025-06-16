@@ -3,7 +3,7 @@ package com.example.api.model;
 import java.util.Collection;
 import java.util.List;
 
-import javax.management.relation.Role;
+
 
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
@@ -42,7 +42,7 @@ public class User implements UserDetails {
 	@Override
 	public Collection<? extends GrantedAuthority> getAuthorities() {
 		// TODO Auto-generated method stub
-		return List.of(new SimpleGrantedAuthority(role.getRoleName()));
+		return List.of(new SimpleGrantedAuthority(role.name()));
 	}
 	
 	@Override
