@@ -24,7 +24,7 @@ import jakarta.websocket.Session;
 public class SecurityConfiguration {
      
 	
-	private final String[] ALLOW_LIST= {""};
+	private final String[] ALLOW_LIST= {"/api/auth/**"};
 	
 	@Autowired
 	private JwtService jwtService;
