@@ -1,21 +1,25 @@
-
-  package com.example.api.service;
+package com.example.api.service;
   
-  import java.net.Authenticator.RequestorType;
+import java.net.Authenticator.RequestorType;
 import java.nio.file.attribute.UserDefinedFileAttributeView;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.security.authentication.AuthenticationManager;
+import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
-  
-  import com.example.api.controller.AuthenticationResponse; import
-  com.example.api.controller.RegisterRequest; import
-  com.example.api.model.User;
+
+import com.example.api.controller.AuthenticationRequest;
+import com.example.api.controller.AuthenticationResponse; 
+import com.example.api.controller.RegisterRequest; 
+import com.example.api.model.User;
 import com.example.api.repository.UserRepository;
 
 
 
-;
+
+
+
   
   
   @Service 
@@ -29,6 +33,10 @@ import com.example.api.repository.UserRepository;
 	  
 	  @Autowired
 	  private JwtService   jwtService;
+	  
+	  @Autowired
+	  private AuthenticationManager authenticationManager;
+	  
   
      public AuthenticationResponse register(RegisterRequest request) {
   
@@ -46,7 +54,18 @@ import com.example.api.repository.UserRepository;
   
   }
   
-  
+     
+     public AuthenticationResponse login(AuthenticationRequest request) {
+    	  
+    	authenticationManager.authenticate(new UsernamePasswordAuthenticationToken(request.getEmail(), request.getPassword()));
+    	
+    	var user = userRepository.findByEmail(request.getEmail()).orElseThrow();
+         
+        var jwtToken=  jwtService.generateToken(user);
+        
+        return AuthenticationResponse.builder().token(jwtToken).build();
+    
+    }
   
   
   }
