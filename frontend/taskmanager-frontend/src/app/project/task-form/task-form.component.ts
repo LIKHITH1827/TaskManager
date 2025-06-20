@@ -2,7 +2,7 @@ import { Component, EventEmitter, inject, Input, Output, SimpleChange, SimpleCha
 import { FormGroup, ReactiveFormsModule, Validators } from '@angular/forms';
 import { FormBuilder } from '@angular/forms';
 import { Task } from '../../task.model';
-import { TaskService } from '../../task.service';
+import { TaskService } from '../../services/task.service';
 
 @Component({
   selector: 'app-task-form',
@@ -65,7 +65,7 @@ handleSubmit(){
     if(this.formType==='CREATE'){
 
      this.taskService.addTask(newTask).subscribe(()=>{
-          
+
           this.closePanel.emit('SUBMIT');
      });
 
