@@ -20,6 +20,7 @@ import com.example.api.service.TaskService;
 
 @CrossOrigin(origins = "http://localhost:4200", allowedHeaders = "*")
 @RestController
+@RequestMapping("/api/tasks")
 public class TaskController {
     
 	private static final Logger logger= LoggerFactory.getLogger(ProjectController.class);
@@ -29,13 +30,13 @@ public class TaskController {
         this.taskService = taskService;
     }
 
-    @GetMapping("/api/tasks")
+    @GetMapping
     public List<Task> getAllTasks() {
     	logger.info("GET api/tasks");
         return taskService.getAllTasks();
     }
 
-    @GetMapping("/api/tasks/{id}")
+    @GetMapping("/{id}")
     public ResponseEntity<Task> getTaskById(@PathVariable("id") Long id) {
         Optional<Task> task = taskService.getTaskById(id);
         if (task.isPresent()) {
@@ -45,12 +46,12 @@ public class TaskController {
         }
     }
 
-    @PostMapping("/api/tasks")
+    @PostMapping
     public ResponseEntity<Task> createTask(@RequestBody Task task) {
         return ResponseEntity.ok(taskService.saveTask(task));
     }
 
-    @PutMapping("/api/tasks/{id}")
+    @PutMapping("/{id}")
     public ResponseEntity<Task> updateTask(@PathVariable("id") Long id, @RequestBody Task task) {
         Optional<Task> taskOptional = taskService.getTaskById(id);
         if (taskOptional.isPresent()) {
@@ -65,7 +66,7 @@ public class TaskController {
         }
     }
 
-    @DeleteMapping("/api/tasks/{id}")
+    @DeleteMapping("/{id}")
     public ResponseEntity<Task> deleteTask(@PathVariable("id") Long id) {
         taskService.deleteTaskById(id);
         return ResponseEntity.noContent().build();
