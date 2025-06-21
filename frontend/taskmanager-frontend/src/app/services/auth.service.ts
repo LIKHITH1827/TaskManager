@@ -38,7 +38,7 @@ export class AuthService {
       }),
       catchError((error)=>{
             console.log(error);
-            return throwError(()=>new Error('Inorect login,please try again'));
+            return throwError(()=>new Error('Incorect login,please try again'));
       })
     );
 }
