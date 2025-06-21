@@ -7,12 +7,12 @@ import { catchError, tap, throwError } from 'rxjs';
 
 type TokenResponse = {token:string;};
 
-type RegisterRequest ={
+export type RegisterRequest ={
   firstname : string,
   lastname: string,
   email : string,
   password:string,
-  role: "USER" | "ADMIN" | "MANAGER";
+  role: 'USER' | 'ADMIN' | 'MANAGER';
 }
 
 @Injectable({

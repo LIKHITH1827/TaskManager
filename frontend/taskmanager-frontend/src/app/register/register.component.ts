@@ -1,14 +1,8 @@
 import { Component, inject } from '@angular/core';
 import { FormBuilder, FormGroup, ReactiveFormsModule,Validators } from '@angular/forms';
-import { AuthService } from '../services/auth.service';
+import { AuthService,RegisterRequest } from '../services/auth.service';
 
-type RegisterRequest ={
-  firstname : string,
-  lastname: string,
-  email : string,
-  password:string,
-  role: "USER" | "ADMIN" | "MANAGER";
-}
+
 
 
 
@@ -22,9 +16,11 @@ type RegisterRequest ={
   templateUrl: './register.component.html',
   styleUrl: './register.component.css'
 })
+
+
 export class RegisterComponent {
 
-registerform:FormGroup;
+registerForm:FormGroup;
 authService= inject(AuthService);
 errorMessage = '';
 
@@ -32,23 +28,23 @@ errorMessage = '';
 
 
 constructor(private fb:FormBuilder){
-  this.registerform=this.fb.group({
+  this.registerForm=this.fb.group({
 
      firstname: ['',Validators.required],
      lastname : ['',Validators.required],
-     email : ['',Validators.required,Validators.email],
-     password : ['', Validators.required,Validators.minLength(6)],
+     email : ['',[Validators.required,Validators.email]],
+     password : ['', [Validators.required,Validators.minLength(6)]],
      role : ['USER', Validators.required ]
 
 
-  })
+  });
 }
 
 
-handleSubmit(){
+onSubmit(){
 
-  if(this.registerform.valid){
-      const registerRequest : RegisterRequest = this.registerform.value;
+  if(this.registerForm.valid){
+      const registerRequest : RegisterRequest = this.registerForm.value;
       this.authService.register(registerRequest).subscribe();
   }
   else{
