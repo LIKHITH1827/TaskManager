@@ -61,7 +61,7 @@ export class TaskService {
   }
 
   addTask(task: Task){
-
+    console.log("in the post task");
     return this.http.post(`${BASE_URL}/api/tasks`, {...task,id:null,project:null}) ;
   }
 
