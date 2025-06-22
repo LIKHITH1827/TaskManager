@@ -18,7 +18,7 @@ public class Corsconfig implements WebMvcConfigurer {
 
         registry.addMapping("/api/tasks/**") // allow private endpoint with credentials (JWT)
                 .allowedOrigins("http://localhost:4200")
-                .allowedMethods("GET", "POST", "PUT", "DELETE")
+                .allowedMethods("GET", "POST", "PUT", "DELETE","OPTIONS")
                 .allowedHeaders("*")
                 .allowCredentials(true);
     }
