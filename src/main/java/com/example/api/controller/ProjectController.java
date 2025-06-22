@@ -20,7 +20,7 @@ import com.example.api.model.Task;
 import com.example.api.service.ProjectService;
 
 
-@CrossOrigin(origins ="http://localhost:4200",allowedHeaders = "*")
+//@CrossOrigin(origins ="http://localhost:4200",allowedHeaders = "*")
 @RestController
 public class ProjectController {
 
