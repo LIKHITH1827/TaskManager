@@ -50,7 +50,7 @@ export class AuthService {
              .pipe(
                    tap((response)=>{
                         this.storageService.setToken(response.token);
-                        this.router.navigate(['/'])
+                        this.router.navigate(['/login'])
 
                    }),
                    catchError((error)=>{
