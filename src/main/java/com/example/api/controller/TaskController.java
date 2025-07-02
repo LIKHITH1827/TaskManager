@@ -18,6 +18,8 @@ import org.springframework.web.bind.annotation.RestController;
 import com.example.api.model.Task;
 import com.example.api.service.TaskService;
 
+import jakarta.validation.Valid;
+
 //@CrossOrigin(origins = "http://localhost:4200", allowedHeaders = "*")
 @RestController
 @RequestMapping("/api/tasks")
@@ -47,12 +49,12 @@ public class TaskController {
     }
 
     @PostMapping
-    public ResponseEntity<Task> createTask(@RequestBody Task task) {
+    public ResponseEntity<Task> createTask(@RequestBody @Valid Task task) {
         return ResponseEntity.ok(taskService.saveTask(task));
     }
 
     @PutMapping("/{id}")
-    public ResponseEntity<Task> updateTask(@PathVariable("id") Long id, @RequestBody Task task) {
+    public ResponseEntity<Task> updateTask(@PathVariable("id") Long id, @RequestBody @Valid Task task) {
         Optional<Task> taskOptional = taskService.getTaskById(id);
         if (taskOptional.isPresent()) {
             Task updatedTask = taskOptional.get();
