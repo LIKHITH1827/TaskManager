@@ -4,6 +4,7 @@ import java.util.List;
 import java.util.Optional;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.DeleteMapping;
@@ -24,7 +25,8 @@ import jakarta.validation.Valid;
 @RestController
 @RequestMapping("/api/tasks")
 public class TaskController {
-    
+	@Value("${spring.profiles.active}")
+    private String activeProfile;
 	private static final Logger logger= LoggerFactory.getLogger(ProjectController.class);
 	private final TaskService taskService;
 
@@ -35,7 +37,9 @@ public class TaskController {
     @GetMapping
     public List<Task> getAllTasks() {
     	logger.info("GET api/tasks");
-        return taskService.getAllTasks();
+    	System.out.println(activeProfile);        
+    	return taskService.getAllTasks();
+        
     }
 
     @GetMapping("/{id}")
