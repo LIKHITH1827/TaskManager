@@ -7,11 +7,15 @@
         Task Name
       </label>
       <input id="task-name" formControlName="name" />
-      @if(taskForm.get('name')?.invalid && taskForm.get('name')?.touched){
-        <div>
-          Task name is required
-        </div>
-      }
+
+@if (taskForm.get('name')?.touched || formSubmitted) {
+  @if (taskForm.get('name')?.errors?.['required']) {
+    <div>Task name is required.</div>
+  }
+  @if (taskForm.get('name')?.errors?.['minlength']) {
+    <div>Task name should have minimum of 2 characters.</div>
+  }
+}
     </div>
      <div>
       <label for="task-description ">

@@ -15,7 +15,7 @@ import { TaskService } from '../../services/task.service';
 
 export class TaskFormComponent {
   taskForm:FormGroup;
-
+  formSubmitted=false;
   //child to parent
   @Output() closePanel= new EventEmitter<'SUBMIT' | 'CANCEL'>();
 
@@ -25,7 +25,7 @@ export class TaskFormComponent {
 
 constructor(private fb: FormBuilder){
   this.taskForm= this.fb.group({
-    name: ['',Validators.required],
+    name: ['',[Validators.required,Validators.minLength(2)]],
     description: [''],
     dueDate : ['',Validators.required],
     id: [0],
@@ -55,6 +55,7 @@ if(changes['currentTask'] && changes['currentTask'].currentValue){
 
 handleSubmit(){
   if(this.taskForm.valid){
+    this.formSubmitted=true;
     const newTask: Task= {
       ...this.taskForm.value,
 
